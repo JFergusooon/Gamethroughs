@@ -4,16 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
+    <link href='style.css' rel='stylesheet'>
 </head>
 <body>
     <div>
 		<h1>Gamethroughs</h1>
 	</div>
+    
+    <div id='sisuDiv'>
+            <div id='signInButton' class='sisubtn'>Sign In</div>
+            <div id='signUpButton' class='sisubtn'>Sign Up</div>
+    </div>
+    <div id='loginDiv' style='display: none;'>
+        <form onsubmit = "return false;" id='loginForm' >
+        <label style="color: black; font-weight: bold;">Username</label><input id="user_name" type ="text">
+        <label style="color: black; font-weight: bold;">Password</label><input id="pass_word" type ="password">
+        <button onclick="login();" >Login</button>
+        </form>
+    </div>
 	
-	<form onsubmit = "return false;">
-    <label style="color: white">Username</label><input id="user_name" type ="text">
-    <label style="color: white">Password</label><input id="pass_word" type ="password">
-    <button onclick="login();" >Login</button>
-	</form>
+    
+
+    <form onsubmit = "return false;" id='textForm'>
+        <button onclick='anonText();' >Anon Text</button>
+        <button onclick='userText();' >User Text</button>
+    </form>
+
+<script src='script.js'></script>
 </body>
 </html>
