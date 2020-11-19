@@ -18,24 +18,12 @@ public class UserRestController {
 	@Autowired
 	private UserRepository userRepo;
 	
-	@PreAuthorize("hasAuthority('ADMIN')")
-	@RequestMapping(path="/create/{username}/{password}/{authorityList}", method=RequestMethod.POST)
+	@RequestMapping(path="/create/{username}/{password}/{authority}", method=RequestMethod.POST)
 	public void createUser(@PathVariable String username,
 							@PathVariable String password, 
-							@PathVariable String authorityList) throws JsonParseException, JsonMappingException, IOException {
-		String[] authorities = authorityList.split("&");
-		User user = new User(username, passwordEncoder().encode(password), authorities);
+							@PathVariable String authority) throws JsonParseException, JsonMappingException, IOException {
+		User user = new User(username, passwordEncoder().encode(password), authority);
 		userRepo.save(user);
-	}
-	
-	@PreAuthorize("hasAuthority('ADMIN')")
-	@RequestMapping(path = "/grant/{username}/{authority}" ,method= RequestMethod.POST)
-	public void grantAuthority(@PathVariable String username,@PathVariable  String authority) throws JsonParseException, JsonMappingException, IOException {
-		User u = userRepo.findOne(username);
-		System.out.println("Username found : " + u.getUsername() + "\nUpdating Authorities...");
-		SecurityConfiguration.validateAuthorityExists(authority);
-		userRepo.addAuthority(u, authority);
-		System.out.println("Authority Added to User.");
 	}
 	
 	public PasswordEncoder passwordEncoder() {

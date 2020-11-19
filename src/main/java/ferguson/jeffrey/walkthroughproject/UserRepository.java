@@ -23,12 +23,12 @@ public class UserRepository {
 	}
 	
 	public void save(User user) throws JsonParseException, JsonMappingException, IOException {
-		if(!file.exists()) {
-			System.out.println("file does not exist.");
-		}
-		UserList userList = findAll();
-		userList.add(user);
-		objectMapper.writeValue(file, userList);
+		// if(!file.exists()) {
+		// 	System.out.println("file does not exist.");
+		// }
+		// UserList userList = findAll();
+		// userList.add(user);
+		// objectMapper.writeValue(file, userList);
 	}
 	
 	public UserList findAll() throws JsonParseException, JsonMappingException, IOException {

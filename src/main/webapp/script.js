@@ -1,7 +1,7 @@
 let username;
 let password;
 
-const sisuDiv = document.getElementById('sisuDiv');
+const headerDiv = document.getElementById('headerDiv');
 const signInBtn = document.getElementById('signInButton');
 const signUpBtn = document.getElementById('signUpButton');
 const loginDiv = document.getElementById('loginDiv');
@@ -18,6 +18,13 @@ function login() {
 function showLoginForm() {
     loginDiv.style.display = 'block';
 }
+
+function submit_newUser() {
+    console.log('User Creation + Redirect To Home');
+}
+
+
+
 
 signInBtn.addEventListener('click', showLoginForm);
 // signUpBtn.addEventListener('click', redirectToSignUp());

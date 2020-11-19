@@ -7,15 +7,14 @@
     <link href='homePage-style.css' rel='stylesheet'>
 </head>
 <body>
-    <div>
-		<h1>Gamethroughs</h1>
-	</div>
-    
-    <div id='sisuDiv'>
+
+    <div id='headerDiv'>
+            <h1 id='headerTitle'>Gamethroughs</h1>
             <div id='signInButton' class='sisubtn'>Sign In</div>
-            <div id='signUpButton' class='sisubtn'><a href='http://localhost:8080/signUp.html'>Sign Up</a>
+            <div id='signUpButton' class='sisubtn'><a href='http://localhost:8080/signUp.html'>Sign Up</a></div>
             <!--<div id='signUpButton' class='sisubtn'>Sign Up</div>-->
     </div>
+    <br> 
     <div id='loginDiv' style='display: none;'>
         <form onsubmit = "return false;" id='loginForm' >
         <label style="color: black; font-weight: bold;">Username</label><input id="user_name" type ="text">
@@ -23,10 +22,24 @@
         <button onclick="login();" >Login</button>
         </form>
     </div>
-	
+    <div id='menuContainer' class='box'>
+        <div id='menu_home' class='box'><a href='http://localhost:8080/'>Home</a></div>
+        <div id='menu_aboutUs' class='box'><a href='http://localhost:8080/aboutUs.html'>About Us</a></div>
+        <div id='menu_topWalkthroughs' class='box'><a href='http://localhost:8080/topWalkthroughs.html'>Top Walkthroughs</a></div>
+        <div id='menu_gameList' class='box'><a href='http://localhost:8080/gameList.html'>Game List</a></div>
+        <div id='menu_searchUser' class='box'><a href='http://localhost:8080/searchUsers.html'>Search Users</a></div>
+    </div>
+
+	<br>
     
 
-    <form onsubmit = "return false;" id='textForm'>
+
+
+
+
+
+
+    <form onsubmit = "return false;" id=''>
         <button onclick='anonText();' >Anon Text</button>
         <button onclick='userText();' >User Text</button>
     </form>
