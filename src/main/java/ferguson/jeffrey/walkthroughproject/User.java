@@ -97,7 +97,6 @@ public class User implements UserDetails {
 				+ "\nusername: " + getUsername()
 				+ "\npassword: " + getPassword()
 				+ "\nauthority: " + getAuthoritiesAsStrings()
-				+ "Hello"
 				+ "\n]\n";
 	}
 }
