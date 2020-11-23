@@ -1,0 +1,60 @@
+html {
+    background-color: #ba5609;
+    text-align: center
+}
+
+#headerTitle {
+    background-color: darkred;
+    margin: 10px;
+    flex: 1;
+}
+#headerDiv {
+    display: flex;
+    flex-direction: row;
+}
+#signInButton, #signUpButton {
+    flex: 0.25;
+}
+
+#loginForm {
+    display: block;
+    max-width: 250px;
+    min-width: 250px;
+    margin: 0 auto;
+    background-color: lightblue;
+    border-width: 2px;
+    border-style: solid;
+}
+#loginDiv {
+    justify-content: right;
+    text-align: right;
+}
+.sisubtn {
+    background-color: rgb(250, 177, 41);
+    color: #000;
+    text-align: center;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    padding: 5px;
+    max-width: 60px;
+    min-width: 60px;
+    margin: 0 auto;
+    position: relative;
+    height: 20px;
+    cursor: pointer;
+    user-select: none;
+}
+
+#menuContainer {
+    display: flex;
+    flex-direction: row;
+    border-radius:0px;
+}
+
+.box {
+    border: 1px solid #000;
+    border-radius: 25px;
+    flex: 1;
+    padding: 5px;
+    background-color: peachpuff;
+}

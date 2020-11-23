@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Walkthroughs</title>
+    <title>Top Walkthroughs</title>
     <link href='homePage-style.css' rel='stylesheet'>
 </head>
 <body>
@@ -17,7 +17,6 @@
     <br> 
     <div id='loginDiv' style='display: none;'>
         <form onsubmit = "return false;" id='loginForm' >
-
         <label style="color: black; font-weight: bold;">Username</label><input id="user_name" type ="text">
         <label style="color: black; font-weight: bold;">Password</label><input id="pass_word" type ="password">
         <button onclick="login();" >Login</button>
@@ -25,13 +24,26 @@
     </div>
     <div id='menuContainer' class='box'>
         <div id='menu_home' class='box'><a href='http://localhost:8080/'>Home</a></div>
-        <div id='menu_myWalkthrough' class='box'><a href='http://localhost:8080/myWalkthrough.html'>MyWalkthrough</a></div>
+        <div id='menu_myWalkthroughs' class='box'><a href='http://localhost:8080/mywalkthrough.html'>MyWalkthrough</a></div>
         <div id='menu_topWalkthroughs' class='box'><a href='http://localhost:8080/topWalkthroughs.html'>Top Walkthroughs</a></div>
         <div id='menu_gameList' class='box'><a href='http://localhost:8080/gameList.html'>Game List</a></div>
         <div id='menu_searchUser' class='box'><a href='http://localhost:8080/searchUsers.html'>Search Users</a></div>
     </div>
 
-	<br>
+    <br>
+    <div id='HomepageHeader'>
+        <h3>Welcome to Gamethroughs</h3>
+        <p>This website is for people to create and view walkthroughs. As games contenue to be made so do questions for how to complete sertain tasks, quests, or even just events in games.
+            There are also those who just want to acheivement hunt. </p>
+
+    </div>
+    
+
+
+
+
+
+
 
     <form onsubmit = "return false;" id=''>
         <button onclick='anonText();' >Anon Text</button>
