@@ -21,8 +21,8 @@ function showLoginForm() {
 
 function submit_newUser() {
     // Connect to DB, create new User from form
-    new_username = document.getElementById("user_name").value;
-    new_password = document.getElementById("pass_word").value;
+    let new_username = document.getElementById("user_name").value;
+    let new_password = document.getElementById("pass_word").value;
 
     
     console.log('User Creation + Redirect To Home');
