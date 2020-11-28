@@ -27,7 +27,22 @@ function submit_newUser() {
     
     console.log('User Creation + Redirect To Home');
 }
+//testing dropdown
+var sectionObj={
+    "Text":{
+        "Text":"Text"
+    },
+    "Image":{
+        "Image":"Image"
+    }
+}
+window.onload = function(){
+    var sectionSelec = document.getElementById("currentsection");
+    for( var x in sectionObj){
+        sectionSelec.options[sectionSection.options.length] = new Option(x,x);
+    }
 
+}
 
 
 
