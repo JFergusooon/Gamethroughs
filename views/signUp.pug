@@ -1,0 +1,11 @@
+extends layout
+
+block content
+    h2 Sign Up
+    form(id='createUserForm' method='post' action='/signUp')
+        p Username
+            input(type='text' id='n_username' name='username')
+        p Password
+            input(type='text' id='n_password' name='password')
+        p
+            input(type='submit' value='Create Account')

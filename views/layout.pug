@@ -1,0 +1,32 @@
+doctype
+html
+    head
+        title=title
+        link(href='/style.css', rel='stylesheet')
+    body
+        div(id='headerDiv')
+            h1(id='headerTitle') Gamethroughs
+            div(id='signInButton' class='sisubtn') Sign In
+            div(id='signUpButton' class='sisubtn')
+                a(href='http://localhost:3001/signUp') Sign Up
+        br
+        div(id='loginDiv' style='display: none;')
+            form(onsubmit='return false;' id='loginForm')
+                label(style='color: black; font-weight: bold;') Username
+                    input(id='user_name' type='text')
+                label(style='color: black; font-weight: bold;') Password
+                    input(id='pass_word' type='password')
+                button(onclick='login();') Login
+        div(id='menuContainer' class='box')
+            div(id='menu_home' class='box')
+                a(href='http://localhost:3001/') Home
+            div(id='menu_myWalkthroughs' class='box')
+                a(href='http://localhost:3001/mywalkthrough.html') My Walkthroughs
+            div(id='menu_topWalkthroughs' class='box')
+                a(href='http://localhost:3001/topWalkthroughs.html') Top Walkthroughs
+            div(id='menu_gameList' class='box')
+                a(href='http://localhost:3001/gameList.html') Game List
+            div(id='menu_searchUser' class='box')
+                a(href='http://localhost:3001/searchUsers.html') Search Users
+        block content
+        script(src='/script.js')
