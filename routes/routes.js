@@ -13,7 +13,7 @@ mongoose.set("useFindAndModify", false);
 let mdb = mongoose.connection;
 mdb.on('error', console.error.bind(console, 'connection error'));
 mdb.once('open', callback => {});
-
+// -------------SCHEMAS -----------
 let userSchema = mongoose.Schema({
     username: String,
     password: String,
@@ -21,6 +21,16 @@ let userSchema = mongoose.Schema({
 
 let User = mongoose.model('User_Collection', userSchema);
 
+let walkthroughSchema = mongoose.Schema({
+    htmlText: String,
+    views: Number,
+    game: String,
+    title: String
+});
+
+let Walkthrough = mongoose.model('Walkthrough_Collection', walkthroughSchema)
+
+// ------------EXPORTS -----------------
 exports.index = (req, res) => {
         res.render('index', {
             title: 'Home Page',
@@ -31,7 +41,7 @@ exports.index = (req, res) => {
         );
         console.log(req.session);
 };
-
+    //User Exports
 exports.signUp = (req, res) => {
     res.render('signUp', {
         title: 'Sign Up'
@@ -57,3 +67,12 @@ exports.returnAllUsers = (req, res) => {
         res.json(user);
     });
 };
+
+
+//----------Walkthrough Exports
+
+exports.newWalk = (req, res) => {
+    res.render('newWalkthrough', {
+        title:'New Walkthrough'
+    });
+}

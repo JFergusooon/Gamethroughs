@@ -21,16 +21,9 @@ function showLoginForm() {
 
 function submit_newUser() {
     // Connect to DB, create new User from form
-<<<<<<< HEAD:public/script.js
     let new_username = document.getElementById("user_name").value;
     let new_password = document.getElementById("pass_word").value;
     window.location.href='http://localhost:3001/'
-=======
-    new_username = document.getElementById("user_name").value;
-    new_password = document.getElementById("pass_word").value;
-
-    
->>>>>>> 7ac3c93446998db9a3b20bcc077c75b4594b3a06:src/main/webapp/script.js
     console.log('User Creation + Redirect To Home');
 }
 //testing dropdown

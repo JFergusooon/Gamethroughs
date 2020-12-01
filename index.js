@@ -48,9 +48,18 @@ app.use(session({secret: 'anystringoftext',
 
 
 
+
+
+//-------------- ROUTES ----------------
 app.get('/', routes.index);
 app.get('/signUp', routes.signUp)
 app.post('/signUp', urlencodedParser, routes.createUser);
 app.get('/getAllUsers', routes.returnAllUsers);
+
+
+app.get('/newWalk', routes.newWalk);
+
+
+
 
 app.listen(3001);
