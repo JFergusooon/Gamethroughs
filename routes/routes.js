@@ -48,6 +48,36 @@ exports.signUp = (req, res) => {
     })
 }
 
+exports.signIn = (req, res) => {
+    res.render('signIn', {
+        title: 'Sign In'
+    })
+}
+
+exports.myWalkthroughs = (req, res) => {
+    res.render('myWalkthroughs', {
+        title: 'My Walkthroughs'
+    })
+}
+
+exports.topWalkthroughs = (req, res) => {
+    res.render('topWalkthroughs', {
+        title: 'Top Walkthroughs'
+    })
+}
+
+exports.gameList = (req, res) => {
+    res.render('gameList', {
+        title: 'Game List'
+    })
+}
+
+exports.searchUsers = (req, res) => {
+    res.render('searchUsers', {
+        title: 'Search Users'
+    })
+}
+
 exports.createUser = (req, res) => {
     let user = new User({
         username: req.body.username,

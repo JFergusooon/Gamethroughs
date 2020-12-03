@@ -1,0 +1,15 @@
+extends layout
+
+block content
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        title(Document)
+        link(href='signUpPage-style.css' rel='stylesheet')
+    body
+        h2 SIGN UP PAGE
+        form(onsubmit='return false;' id='createUserForm')
+            p(Username:  <input type='text' id='n_username')
+            p(Password:  <input type='text' id='n_username')
+            button(onclick="location.href='http://localhost:3001/'") Sign in
+        script src='script.js'

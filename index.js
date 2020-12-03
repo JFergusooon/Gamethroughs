@@ -52,8 +52,13 @@ app.use(session({secret: 'anystringoftext',
 
 //-------------- ROUTES ----------------
 app.get('/', routes.index);
-app.get('/signUp', routes.signUp)
+app.get('/signUp', routes.signUp);
 app.post('/signUp', urlencodedParser, routes.createUser);
+app.get('/signIn', routes.signIn);
+app.get('/myWalkthroughs', routes.myWalkthroughs);
+app.get('/topWalkthroughs', routes.topWalkthroughs);
+app.get('/gameList', routes.gameList);
+app.get('/searchUsers', routes.searchUsers);
 app.get('/getAllUsers', routes.returnAllUsers);
 
 
