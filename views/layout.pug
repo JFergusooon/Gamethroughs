@@ -6,17 +6,11 @@ html
     body
         div(id='headerDiv')
             h1(id='headerTitle') Gamethroughs
-            div(id='signInButton' class='sisubtn') Sign In
+            div(id='signInButton' class='sisubtn')
+                a(href='http://localhost:3001/signIn') Sign In
             div(id='signUpButton' class='sisubtn')
                 a(href='http://localhost:3001/signUp') Sign Up
         br
-        div(id='loginDiv' style='display: none;')
-            form(onsubmit='return false;' id='loginForm')
-                label(style='color: black; font-weight: bold;') Username
-                    input(id='user_name' type='text')
-                label(style='color: black; font-weight: bold;') Password
-                    input(id='pass_word' type='password')
-                button(onclick='login();') Login
         div(id='menuContainer' class='box')
             div(id='menu_home' class='box')
                 a(href='http://localhost:3001/') Home
