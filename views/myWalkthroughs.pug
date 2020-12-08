@@ -2,3 +2,20 @@ extends layout
 
 block content
     h2 My Walkthroughs
+    <!-- This form is to determen the type of content that is needed to be created-->
+            div(id="createdropdown")
+                form(onsubmit="return false;" id='typeOfContent')
+                p Name of Walkthrough:   
+                    input(type = 'Text' id='Wname')
+                p Name of Game:
+                    input(type = 'Text' id='Game')
+
+                label(style='color: black; font-weight: bold;') Select type
+                        select(id='userChoise')
+                            option(value='text') Words
+                            option(value='image') images
+                            option(value='video') videos
+                        input(type='submit')
+            br
+//-- this is for setting the content of the page such as the text, image, or video after selection    
+    div(id="createdContent")

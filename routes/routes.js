@@ -55,6 +55,7 @@ exports.signIn = (req, res) => {
 }
 
 exports.myWalkthroughs = (req, res) => {
+    
     res.render('myWalkthroughs', {
         title: 'My Walkthroughs'
     })
@@ -102,6 +103,11 @@ exports.returnAllUsers = (req, res) => {
 //----------Walkthrough Exports
 
 exports.newWalk = (req, res) => {
+    const walkthrough ={
+        Title: req.body.Wname,
+        GameW: req.body.Game,
+        Box: req.body.typeOfContent
+    }
     res.render('newWalkthrough', {
         title:'New Walkthrough'
     });
