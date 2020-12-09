@@ -113,7 +113,11 @@ exports.createWalk =(req,res) =>{
     const walkthrough ={
         Title: req.body.Wname,
         GameW: req.body.Game,
-        Box: req.body.typeOfContent
+        Box: req.body.Contentbox
     }
-    Walkthrough.save
+    walkthrough.save((err, WT) => {
+        if (err) return console.error(err);
+        console.log(req.body.name + ' added');
+    });
+    res.redirect('/walkthrough')
 }

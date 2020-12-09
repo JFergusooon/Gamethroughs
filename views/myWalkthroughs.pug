@@ -15,8 +15,8 @@ block content
                                 option(value='text') Words
                                 option(value='image') images
                                 option(value='video') videos
-                                
-                                input(type='button' onclick="SelectedContent()" id='subtype' name='submite1') 
+                                br
+                                input(type='button' onclick="SelectedContent()" value="submit type" id='subtype' name='submite1' class="submit") 
             div(id='ContentMessage1')
                 p Please insert your text here:
             div(id='ContentMessage2')
@@ -25,6 +25,7 @@ block content
                 p Please paster your Video link here:
 
             input(type='Text' id='Contentbox')
+            input(type='button' id='submitAll' value="submit all")
     script(src='/Walkthrough.js')
     <!-- this is for setting the content of the page such as the text, image, or video after selection-->  
     div(id="createdContent")

@@ -13,8 +13,8 @@ contentmessage1.style.display = 'none';
 contentmessage2.style.display = 'none';
 contentmessage3.style.display = 'none';
 contentboxen.style.display ='none';
-typesubmit.style.width = '25px';
-typesubmit.style.height ='20px';
+//typesubmit.style.width = '25px';
+//typesubmit.style.height ='20px';
 
 function SelectedContent(){
     let formcontentV = document.getElementById('userChoise').value;
