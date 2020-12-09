@@ -4,18 +4,27 @@ block content
     h2 My Walkthroughs
     <!-- This form is to determen the type of content that is needed to be created-->
             div(id="createdropdown")
-                form(onsubmit="return false;" id='typeOfContent')
+                form(onsubmit="return false;" id='totalPage')
                 p Name of Walkthrough:   
                     input(type = 'Text' id='Wname')
                 p Name of Game:
                     input(type = 'Text' id='Game')
+                form(onsubmit="return false;" id='typeOfContent')
+                    label(style='color: black; font-weight: bold;') Select type
+                            select(id='userChoise')
+                                option(value='text') Words
+                                option(value='image') images
+                                option(value='video') videos
+                                
+                                input(type='button' onclick="SelectedContent()" id='subtype' name='submite1') 
+            div(id='ContentMessage1')
+                p Please insert your text here:
+            div(id='ContentMessage2')
+                p Please paste your image link in the box:
+            div(id='ContentMessage3')
+                p Please paster your Video link here:
 
-                label(style='color: black; font-weight: bold;') Select type
-                        select(id='userChoise')
-                            option(value='text') Words
-                            option(value='image') images
-                            option(value='video') videos
-                        input(type='submit')
-            br
-//-- this is for setting the content of the page such as the text, image, or video after selection    
+            input(type='Text' id='Contentbox')
+    script(src='/Walkthrough.js')
+    <!-- this is for setting the content of the page such as the text, image, or video after selection-->  
     div(id="createdContent")

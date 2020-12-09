@@ -103,12 +103,17 @@ exports.returnAllUsers = (req, res) => {
 //----------Walkthrough Exports
 
 exports.newWalk = (req, res) => {
+    
+    
+    res.render('newWalkthrough', {
+        title:'New Walkthrough'
+    });
+}
+exports.createWalk =(req,res) =>{
     const walkthrough ={
         Title: req.body.Wname,
         GameW: req.body.Game,
         Box: req.body.typeOfContent
     }
-    res.render('newWalkthrough', {
-        title:'New Walkthrough'
-    });
+    Walkthrough.save
 }

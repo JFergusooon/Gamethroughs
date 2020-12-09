@@ -56,6 +56,7 @@ app.get('/signUp', routes.signUp);
 app.post('/signUp', urlencodedParser, routes.createUser);
 app.get('/signIn', routes.signIn);
 app.get('/myWalkthroughs', routes.myWalkthroughs);
+app.post('/myWalkthroughs', urlencodedParser, routes.createWalk);
 app.get('/topWalkthroughs', routes.topWalkthroughs);
 app.get('/gameList', routes.gameList);
 app.get('/searchUsers', routes.searchUsers);
