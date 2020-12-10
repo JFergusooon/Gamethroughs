@@ -110,11 +110,11 @@ exports.newWalk = (req, res) => {
     });
 }
 exports.createWalk =(req,res) =>{
-    const walkthrough ={
+    let  walkthrough = new Walkthrough({
         Title: req.body.Wname,
         GameW: req.body.Game,
         Box: req.body.Contentbox
-    }
+    })
     walkthrough.save((err, WT) => {
         if (err) return console.error(err);
         console.log(req.body.name + ' added');

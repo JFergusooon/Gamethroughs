@@ -25,7 +25,66 @@ block content
                 p Please paster your Video link here:
 
             input(type='Text' id='Contentbox')
-            input(type='button' id='submitAll' value="submit all")
+
+                input(type='button' id='submitContent' value="Submit Content" onclick='AddElements()')
+            form(onsubmit="return false;" id='typeOfContent2')
+        
+                label(style='color: black; font-weight: bold;') Select type
+                        select(id='userChoise2')
+                            option(value='text') Words
+                            option(value='image') images
+                            option(value='video') videos
+                            br
+                            input(type='button' onclick="SelectedContent()" value="submit type" id='subtype2' name='submite2' class="submit") 
+            div(id='ContentMessage4')
+                p Please insert your text here:
+            div(id='ContentMessage5')
+                p Please paste your image link in the box:
+            div(id='ContentMessage6')
+                p Please paster your Video link here:
+
+            input(type='Text' id='Contentbox2')
+                
+            input(type='button' id='submitContent2' value="Submit Content" onclick='AddElements2()')
+
+            form(onsubmit="return false;" id='typeOfContent3')
+                label(style='color: black; font-weight: bold;') Select type
+                        select(id='userChoise')
+                            option(value='text') Words
+                            option(value='image') images
+                            option(value='video') videos
+                            br
+                            input(type='button' onclick="SelectedContent()" value="submit type" id='subtype3' name='submite1' class="submit") 
+            div(id='ContentMessage7')
+                p Please insert your text here:
+            div(id='ContentMessage8')
+                p Please paste your image link in the box:
+            div(id='ContentMessage9')
+                p Please paster your Video link here:
+
+            input(type='Text' id='Contentbox3')
+                input(type='button' id='submitContent3' value="Submit Content" onclick='AddElements3()')
+            form(onsubmit="return false;" id='typeOfContent4')
+                label(style='color: black; font-weight: bold;') Select type
+                        select(id='userChoise')
+                            option(value='text') Words
+                            option(value='image') images
+                            option(value='video') videos
+                            br
+                            input(type='button' onclick="SelectedContent()" value="submit type" id='subtype4' name='submite1' class="submit") 
+            div(id='ContentMessage10')
+                p Please insert your text here:
+            div(id='ContentMessage11')
+                p Please paste your image link in the box:
+            div(id='ContentMessage12')
+                p Please paster your Video link here:
+
+            input(type='Text' id='Contentbox4')
+                input(type='button' id='submitContent4' value="Submit Content" onclick='AddElements()')
+            br
+            p Finished with walkthroughpage?
+
+            input(type='button' id='submitAllInfo' value='Complete the Form' onclick='submitInformation()')
     script(src='/Walkthrough.js')
     <!-- this is for setting the content of the page such as the text, image, or video after selection-->  
-    div(id="createdContent")
+    div(id="contenContent")
