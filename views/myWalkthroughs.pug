@@ -23,8 +23,9 @@ block content
                 p Please paste your image link in the box:
             div(id='ContentMessage3')
                 p Please paster your Video link here:
-                input(type='Text' id='Contentbox')
-                input(type='button' id='submitContent' value="Submit Content" onclick='AddElements()')
+            input(type='Text' id='Contentbox')
+            input(type='button' id='submitContent' value="Submit Content" onclick='shownextfield()')
+            br
             form(onsubmit="return false;" id='typeOfContent2')
         
                 label(style='color: black; font-weight: bold;') Select type
@@ -43,8 +44,8 @@ block content
 
             input(type='Text' id='Contentbox2')
                 
-            input(type='button' id='submitContent2' value="Submit Content" onclick='AddElements2()')
-
+            input(type='button' id='submitContent2' value="Submit Content" onclick='selectnextfield2()')
+            br
             form(onsubmit="return false;" id='typeOfContent3')
                 label(style='color: black; font-weight: bold;') Select type
                         select(id='userChoise')
@@ -61,6 +62,7 @@ block content
                 p Please paster your Video link here:
                 input(type='Text' id='Contentbox3')
                 input(type='button' id='submitContent3' value="Submit Content" onclick='AddElements3()')
+            br
             form(onsubmit="return false;" id='typeOfContent4')
                 label(style='color: black; font-weight: bold;') Select type
                         select(id='userChoise')

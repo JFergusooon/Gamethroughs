@@ -44,6 +44,7 @@ contentmessage9.style.display = 'none';
 contentmessage10.style.display = 'none';
 contentmessage11.style.display = 'none';
 contentmessage12.style.display = 'none';
+contentboxen.style.display ="none";
 contentboxen2.style.display ='none';
 contentboxen3.style.display ='none';
 contentboxen4.style.display ='none';
@@ -140,7 +141,7 @@ function AddElements1(){
         }
     }
     function submitInformation(){
-        
+
     }
 
 
